@@ -1,0 +1,67 @@
+:root {
+    --cream-highlight: hsla(58, 95%, 98%, 1); 
+    --cream: hsla(58, 95%, 91%, 1);
+    --cream-shadow: hsla(58, 95%, 83%, 1);
+    --outline: hsla(58, 95%, 60%, 1);
+    
+    --dark-highlight: hsla(300, 35%, 13%, 1);
+    --dark-cream: hsla(300, 35%, 6%, 1);
+    --dark-shadow: hsla(58, 95%, 3%, 1);
+    --dark-outline: hsla(58, 95%, 0%, 1);
+}
+
+body {
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: hsla(0,0%,100%,100%);
+}
+
+.plate-on  {
+    display: grid;
+    place-items: center;
+    width: 275px;
+    height: 450px;
+    background: var(--cream);
+    border: solid 1px var(--outline);
+}
+
+.plate-off  {
+    display: grid;
+    place-items: center;
+    width: 275px;
+    height: 450px;
+    background: var(--dark-cream);
+    border: solid 1px var(--dark-outline);
+}
+
+.hole-on {
+    display: grid;
+    justify-items: center;
+    width: 50px;
+    height: 100px;
+    background: var(--cream-shadow);
+    border: solid 1px var(--outline);
+}
+
+.hole-off {
+    display: grid;
+    justify-items: center;
+    width: 50px;
+    height: 100px;
+    background: var(--dark-shadow);
+    border: solid 1px var(--dark-outline);
+}
+
+.lightswitch-on {
+    width: 48px;
+    height: 50px;
+    background: var(--cream-highlight);
+}
+
+.lightswitch-off {
+    width: 48px;
+    height: 50px;
+    background: var(--dark-highlight);
+}
